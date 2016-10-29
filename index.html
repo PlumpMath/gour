@@ -12,6 +12,7 @@
 <script src="assets/prefixfree.min.js"></script>
 <script src="assets/moment.min.js"></script>
 <script src="assets/jsPlumb-2.1.7-min.js"></script>
+<script src="assets/flowtype.js"></script>
 
 <script>
 
@@ -35,11 +36,11 @@ $(function() {
     });
 
     $( "#c_middle" ).click(function() {
-        modify_qty(Math.round(Math.random() * 100 + 1));
+        modify_qty(Math.round(Math.random() * 1000 + 1));
     });
 
     $( "#c_increase" ).click(function() {
-        modify_qty(Math.round(Math.random() * 1000 + 1));
+        modify_qty(Math.round(Math.random() * 100000 + 1));
     });
 
 
@@ -93,7 +94,7 @@ div.spacer { height: 1px; }
 
 
 #numberdiv {
-    font-size: 18em;
+    font-size: 13em;
 }
 
 </style>
