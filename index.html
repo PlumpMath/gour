@@ -20,7 +20,11 @@ window.unreadEmails = 0;
 function modify_qty(val) {
     window.unreadEmails += val;
    
-    $("#unreadEmails").text(window.unreadEmails);
+    $("#unreadEmails").text(numberWithCommas(window.unreadEmails));
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 $(function() {
@@ -89,7 +93,7 @@ div.spacer { height: 1px; }
 
 
 #numberdiv {
-    font-size: 20em;
+    font-size: 18em;
 }
 
 </style>
